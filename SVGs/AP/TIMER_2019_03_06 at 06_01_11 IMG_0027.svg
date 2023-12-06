@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg23967"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="TIMER_2019_03_06 at 06_01_11 IMG_0027.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23969"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.22645917"
+     inkscape:cx="1600.7301"
+     inkscape:cy="-642.49994"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer70" />
+  <defs
+     id="defs23964" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer70"
+     inkscape:label="Benthic Fish"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#00c5ff;stroke-width:0.860398;stroke-opacity:1"
+       id="path24183"
+       cx="107.35663"
+       cy="738.15106"
+       rx="19.320522"
+       ry="59.726585"
+       transform="matrix(0.72192583,-0.69197045,0.48790562,0.87289639,0,0)" />
+    <ellipse
+       style="fill:none;stroke:#00c5ff;stroke-width:1;stroke-opacity:1"
+       id="path24503"
+       cx="663.32953"
+       cy="84.340759"
+       rx="53.451962"
+       ry="22.490715"
+       transform="rotate(-39.360293)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer75"
+     inkscape:label="Serpulids"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#00faff;stroke-width:1;stroke-opacity:1"
+       id="path24608"
+       cx="508.23175"
+       cy="-283.03253"
+       rx="15.480623"
+       ry="16.648972" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer76"
+     inkscape:label="Ophiuroid traces"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#e32c2c;stroke-width:1;stroke-opacity:1"
+       id="path24925"
+       cx="132.18359"
+       cy="-306.5007"
+       rx="90.876221"
+       ry="103.26843" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer71"
+     inkscape:label="Krill"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:1"
+       id="path24390"
+       cx="458.51181"
+       cy="572.93323"
+       rx="18.588318"
+       ry="10.326842" />
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:1"
+       id="path24610"
+       cx="340.94696"
+       cy="1001.8713"
+       rx="18.547539"
+       ry="34.46629"
+       transform="rotate(-23.549405)" />
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:1"
+       id="path24818"
+       cx="204.69249"
+       cy="18.510822"
+       rx="32.85981"
+       ry="11.683489"
+       transform="rotate(15.469716)" />
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:1"
+       id="path24922"
+       cx="-515.53394"
+       cy="598.77881"
+       rx="12.559751"
+       ry="28.33246" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer72"
+     inkscape:label="Ophiuroids - Ophioperla"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1"
+       id="path24393"
+       cx="228.84283"
+       cy="718.54175"
+       rx="31.3936"
+       ry="28.295549" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer73"
+     inkscape:label="Notocrangon"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1"
+       id="path24396"
+       cx="357.53323"
+       cy="675.79395"
+       rx="22.782803"
+       ry="11.391401"
+       transform="rotate(36.4944)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer74"
+     inkscape:label="Buried actinarian"
+     style="display:inline">
+    <ellipse
+       style="fill:none;stroke:#26ff00;stroke-width:1;stroke-opacity:1"
+       id="path24501"
+       cx="-27.748285"
+       cy="-332.10318"
+       rx="21.322369"
+       ry="22.490715" />
+    <ellipse
+       style="fill:none;stroke:#26ff00;stroke-width:1;stroke-opacity:1"
+       id="path24714"
+       cx="695.60577"
+       cy="46.295822"
+       rx="21.760498"
+       ry="19.715887" />
+  </g>
+</svg>
