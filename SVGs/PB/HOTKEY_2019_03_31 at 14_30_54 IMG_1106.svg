@@ -24,140 +24,17 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.32026165"
-     inkscape:cx="4335.5176"
-     inkscape:cy="4844.4765"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:cx="4335.5175"
+     inkscape:cy="4844.4764"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer25"
+     inkscape:current-layer="layer26"
      inkscape:lockguides="false" />
   <defs
      id="defs2" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer18"
-     inkscape:label="Substrate: Overlapping pillow lavas with encrusters"
-     style="display:inline" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer25"
-     inkscape:label="% encrusting - ~70%"
-     style="display:inline">
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="ret1x1"
-       width="436.55145"
-       height="436.55145"
-       x="-102.8417"
-       y="-408.94901" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect1x2"
-       width="436.55145"
-       height="436.55145"
-       x="333.70975"
-       y="-408.94901" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect1x3"
-       width="436.55145"
-       height="436.55145"
-       x="770.26123"
-       y="-408.94901" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect1x4"
-       width="436.55145"
-       height="436.55145"
-       x="1206.8127"
-       y="-408.94901" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect2x4"
-       width="436.55145"
-       height="436.55145"
-       x="1206.8127"
-       y="27.602448" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect2x3"
-       width="436.55145"
-       height="436.55145"
-       x="770.26123"
-       y="27.602448" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect2x2"
-       width="436.55145"
-       height="436.55145"
-       x="333.70972"
-       y="27.602448" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect2x1"
-       width="436.55145"
-       height="436.55145"
-       x="-102.84174"
-       y="27.602448" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect3x1"
-       width="436.55145"
-       height="436.55145"
-       x="-102.84174"
-       y="464.1539" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect3x2"
-       width="436.55145"
-       height="436.55145"
-       x="333.70972"
-       y="464.1539" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect3x3"
-       width="436.55145"
-       height="436.55145"
-       x="770.26129"
-       y="464.1539" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect3x4"
-       width="436.55145"
-       height="436.55145"
-       x="1206.8127"
-       y="464.1539" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect4x4"
-       width="436.55145"
-       height="436.55145"
-       x="1208.6346"
-       y="902.52753" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect4x3"
-       width="436.55145"
-       height="436.55145"
-       x="770.26117"
-       y="900.70532" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect4x2"
-       width="436.55145"
-       height="436.55145"
-       x="333.70972"
-       y="900.70532" />
-    <rect
-       style="fill:none;stroke:#00ff38;stroke-width:0.948539;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.237135, 0.237135"
-       id="rect4x1"
-       width="436.55145"
-       height="436.55145"
-       x="-102.81596"
-       y="902.5274" />
-  </g>
   <g
      inkscape:groupmode="layer"
      id="layer26"

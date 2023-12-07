@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.16503051"
-     inkscape:cx="7456.197"
-     inkscape:cy="5959.5041"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:zoom="0.058347096"
+     inkscape:cx="7463.9533"
+     inkscape:cy="4584.6326"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer14"
+     inkscape:current-layer="layer18"
      units="cm"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -54,179 +54,6 @@
        apply_with_weight="true"
        only_selected="false" />
   </defs>
-  <g
-     inkscape:groupmode="layer"
-     id="layer15"
-     inkscape:label="Substrate: Overlapping pillow lavas with filmy cover"
-     style="display:inline"
-     sodipodi:insensitive="true" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer14"
-     inkscape:label="Filamentous encrustation ~ 30%"
-     style="display:inline"
-     sodipodi:insensitive="true">
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect1x1"
-       width="319.26483"
-       height="319.26486"
-       x="1273.4485"
-       y="829.30719">
-      <desc
-         id="desc7507">Encrustration % = 5</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect1x2"
-       width="319.26483"
-       height="319.26486"
-       x="1592.7134"
-       y="829.30719">
-      <desc
-         id="desc7509">Encrustation % = 5</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect1x3"
-       width="319.26483"
-       height="319.26486"
-       x="1911.9783"
-       y="829.30719">
-      <desc
-         id="desc7511">Encrustation % = 10</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect1x4"
-       width="319.26483"
-       height="319.26486"
-       x="2231.7825"
-       y="828.77802">
-      <desc
-         id="desc7513">Encrustation % = 5</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect2x4"
-       width="319.26483"
-       height="319.26486"
-       x="2231.2432"
-       y="1148.572">
-      <desc
-         id="desc7521">Encrustation % = 5</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect2x3"
-       width="319.26483"
-       height="319.26486"
-       x="1911.9783"
-       y="1148.572">
-      <desc
-         id="desc7519">Encrustation % = 20</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect2x2"
-       width="319.26483"
-       height="319.26486"
-       x="1592.7134"
-       y="1148.572">
-      <desc
-         id="desc7517">Encrustation % = 10</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect2x1"
-       width="319.26483"
-       height="319.26486"
-       x="1273.4485"
-       y="1148.572">
-      <desc
-         id="desc7515">Encrustation % =  20%</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect3x1"
-       width="319.26483"
-       height="319.26486"
-       x="1273.4485"
-       y="1467.8369">
-      <desc
-         id="desc7523">Encrustation % =  30</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect3x2"
-       width="319.26483"
-       height="319.26486"
-       x="1592.7134"
-       y="1467.8369">
-      <desc
-         id="desc7525">Encrustation % = 50</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect3x3"
-       width="319.26483"
-       height="319.26486"
-       x="1911.9783"
-       y="1467.8369">
-      <desc
-         id="desc7527">Encrustation % = 50</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect3x4"
-       width="319.26483"
-       height="319.26486"
-       x="2231.2432"
-       y="1467.8369">
-      <desc
-         id="desc7529">Encrustation % = 50</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect4x4"
-       width="319.26483"
-       height="319.26486"
-       x="2231.2432"
-       y="1787.1018">
-      <desc
-         id="desc7537">Encrustation % = 70</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect4x3"
-       width="319.26483"
-       height="319.26486"
-       x="1911.9783"
-       y="1787.1018">
-      <desc
-         id="desc7535">Encrustation % = 50</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect4x2"
-       width="319.26483"
-       height="319.26486"
-       x="1592.7134"
-       y="1787.1018">
-      <desc
-         id="desc7533">Encrustation % = 40</desc>
-    </rect>
-    <rect
-       style="fill:none;stroke:#ff0100;stroke-width:1.48514;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect4x1"
-       width="319.26483"
-       height="319.26486"
-       x="1273.4485"
-       y="1787.6425">
-      <desc
-         id="desc7531">Encrustation % = 50</desc>
-    </rect>
-  </g>
   <g
      inkscape:groupmode="layer"
      id="layer18"

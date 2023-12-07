@@ -118,9 +118,19 @@ setwd(system("git rev-parse --show-toplevel", intern=T))
 write.csv(df, row.names = FALSE, file = "data/AP_dexOutput.csv") 
 
 
-# TAKE THIS DEX OUTPUT, and CLEAN IN EXCEL with FIND AND REPLACE 
+# TAKE THIS DEX OUTPUT, and CLEAN TYPOS etc IN EXCEL with FIND AND REPLACE 
 
+setwd("SVGs/PB")
+transect <- list.files()
+temp <- list(length(transect))
 
-df <- read.csv(file = "data/PS118/PS118_69-1/2023-08-09_dexOutput.csv")
-tax.list <- unique(df$taxa)
+for (i in 1:length(transect)){
+  file <- transect[i]
+  temp[[i]] <- dex(file)
+  temp[[i]][6] <- file
+}
 
+df <- do.call(rbind, temp)
+setwd(system("git rev-parse --show-toplevel", intern=T))
+
+write.csv(df, row.names = FALSE, file = "data/PB_dexOutput.csv") 
