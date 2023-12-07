@@ -1,3 +1,5 @@
+## This scripts creates profile metadata for annotated photos only and creates Fig 1
+
 
 # Import metadata --------------------------------------------------------
 
@@ -46,7 +48,7 @@ AP_profile <- profile #add this info to AP profile, now select photos every ~500
 
 profile <- PB_profile 
 
-#Now rerun lines 32-44
+#Now rerun lines 33-45
 
 PB_profile <- profile
 

@@ -9,7 +9,7 @@ library(dplyr)
 library(magrittr)
 library(ggplot2)
 library(vegan)
-source("scripts/functions.R")
+source("code/functions.R")
 
 load(file = "data/profileMetadata.RData")
 
@@ -77,6 +77,8 @@ colnames(abu)
 sponges <- rowSums(abu[,c(47, 51, 52, 53, 54)])
 abu <- abu[,-c(47, 51, 52, 53, 54)]
 abu <- cbind(abu, sponges)
+
+save(abu, file = "data/AP_abundance_plus_dropstones.RData")
 
 #remove dropstones
 abu <- abu[,-21]
@@ -216,7 +218,7 @@ rownames(abundance) <- transect
 
 abundance <- abundance[,-c(5, 9, 14, 36)] #brittle stars
 
-abundance <- abundance[,-21] #encrusters
+abundance <- abundance[,-24] #encrusters
 
 
 encrustPercent <- read.csv("data/encrustPercent.csv")
@@ -225,7 +227,7 @@ encrustPercent <- read.csv("data/encrustPercent.csv")
 abundance <- cbind(abundance, encrustPercent$encrustPercent)
 abu <- abundance
 
-del <- c(11, 22) #boulders, dropstones 
+del <- c(9, 19) #boulders, dropstones 
 
 abu <- abu[,-del]
 
@@ -236,6 +238,7 @@ abu <- abu[,-c(8, 14, 20, 41, 30)]
 abu <- cbind(abu, fish)
 nm <- as.data.frame(colnames(abu))
 colnames(nm) <- "original"
+
 write.csv(nm, row.names = FALSE, file = "data/PB_taxa_list_groups.csv") 
 
 ## NOW ADD TO THIS CSV FILE EXTRA COLUMNS: 
@@ -249,9 +252,9 @@ write.csv(nm, row.names = FALSE, file = "data/PB_taxa_list_groups.csv")
 #reload the CSV file after adding the info 
 
 supergroup <- read.csv("data/PB_taxa_list_groups.csv")
-nm <- supergroup$for_supplement
-colnames(abu) <- nm
-abundance <- abu
+
+save(abundance, file = "data/PowellBasin-abundance.RData")
+
 write.csv(abundance, file = "supplements/Table_S02_PowellBasin-abundance.csv")
 
 
