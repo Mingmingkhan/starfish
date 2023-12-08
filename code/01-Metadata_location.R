@@ -23,35 +23,6 @@ PB_profile <- na.omit(PB_profile) #Remove ANY photos that don't have lat, long o
 
 # Create profile information  ---------------------------------------------
 
-# Compute distances between photos each photo in the profile 
-
-
-#loop computes distance between photo i, and the preceding photo                                 
-
-profile <- AP_profile
-
-#loop computes the distance between photo i, and the preceding photo
-profile$dist <- 0 #set all to 0
-profile$cum.dist <- 0 #set cumulative distance to 0 
-  
-for (i in 2:nrow(profile)){
-  profile$dist[i] <- 
-    geosphere::distHaversine(c(profile$Longitude[i-1],
-                               profile$Latitude[i-1]),
-                             c(profile$Longitude[i],
-                               profile$Latitude[i]))
-  profile$cum.dist <- cumsum(profile$dist)
-  
-}
-
-AP_profile <- profile #add this info to AP profile, now select photos every ~500 m 
-
-profile <- PB_profile 
-
-#Now rerun lines 33-45
-
-PB_profile <- profile
-
 #import the file names of marked photos 
 
 #Antarctic Peninsula 
