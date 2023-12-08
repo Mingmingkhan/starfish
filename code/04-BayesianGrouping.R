@@ -99,9 +99,9 @@ load("data/PowellBasin-abundance.RData")
 
 # Grouping variables -----------------------------------------------------
 
-encrusters <- get.quartile(abundance)
+encrusters <- get.quartile(abu)
 encrusters <- encrusters$quartile
-dat <- abundance
+dat <- abu
 
 actiniarians <- rowSums(dat[,c(1, 2, 5, 34, 28)])
 
@@ -160,10 +160,10 @@ group012 <- cbind(dat2$Astrochlamys_sol, dat2$Amphiura_Ophioperla, cucumbers,
                   dat2$Stylasterids)
 
 group012.d <- as.data.frame(apply(group012, 2, get.hilo.m))
-colnames(group012.d) <- c("Astrochlamys", "Holothurians", "Demosponges", "Glass_sponges",
-                          "Hard_corals", "Octocorals", "Ophiacantha_vivipara", 
-                          "Pencil_urchins", "Cup_corals", "Starfish", "Stylasterids",
-                          "Amphiura_Ophioperla")
+colnames(group012.d) <- c("Astrochlamys", "Amphiura_Ophioperla", "Holothurians",
+                          "Cup_corals", "Demosponges", "Glass_Sponges", 
+                          "Hard_corals", "Octocorals", "Ophiacantha_vivipara",
+                          "Pencil_urchins", "Starfish", "Stylasterids")
 
 
 group012.d$Astrochlamys[group012.d$Astrochlamys == 0] <- 1
@@ -173,21 +173,51 @@ mixed <- cbind(group01.d, group012.d, encrusters)
 nodes <- colnames(mixed)
 windows()
 plot.group(mixed)
-
-write.table(mixed, row.names = FALSE, col.names = FALSE, 
-            file = file.path("banjo_try3/", paste0(Sys.Date(), "_yesDeadStarfishGroup.txt")))
-
-write.table(nodes, row.names = FALSE, col.names = FALSE, 
-            file = file.path("banjo_try3/", paste0(Sys.Date(), "_yesDeadStarfishGroupNodes.txt")))
-
-save(mixed, dat.hi.lo, dat.pres, dat2, nodes, 
-     file = file.path("data/PS118/PS118_69-1/", paste0(Sys.Date(), "yesDeadStarfishGroup.RData")))
+rownames(mixed) <- rownames(abu)
 
 
-# test one without the dead cup corals 
-
-mixed <- mixed[,-14]
-nodes <- colnames(mixed)
-plot.group(mixed)
+write.csv(mixed, file = "supplements/Table_S04_PowellBasin_BN_inputs.csv")
 
 
+# POWELL BASIN SENSITIVITY ------------------------------------------------
+
+# Test a network with only the nodes that can be discretized uniformly at the 
+# raw collection level, i.e., no groups 
+
+dat.hi.lo <- as.data.frame(apply(dat, 2, get.hilo.m))
+
+dat.pres <- as.data.frame(apply(dat, 2, pres.abs.m))
+
+windows()
+plot.group(dat.pres)
+
+windows()
+plot.group(dat.hi.lo)
+
+group01 <- dat.pres$Starfish_Hymenaster
+
+group012 <- cbind(dat.hi.lo$Amphiura_Ophioperla, dat.hi.lo$Anthomastus, 
+                  dat.hi.lo$Astrochlamys_sol, dat.hi.lo$Holothurians, 
+                  dat.hi.lo$Cup_corals_dead,
+                  dat.hi.lo$Demosponges, dat.hi.lo$Glass_Sponges, 
+                  dat.hi.lo$Hard_corals,
+                  dat.hi.lo$Ophiacantha_vivipara, dat.hi.lo$Pencil_urchins,
+                  dat.hi.lo$Cup_corals_red, dat.hi.lo$Stylasterids)
+
+noGroup <- as.data.frame(cbind(group01, group012, encrusters))
+colnames(noGroup) <- c("Hymenaster", "Amphiura_Ophioperla", "Anthomastus",
+                       "Astrochlamys", "Holothurians", "dead_cup_corals",
+                       "Demosponges", "Glass_sponges",
+                       "Hard_corals", "Ophiocantha_vivipara", "Pencil_urchins",
+                       "red_cup_corals", "Stylasterids", "Encrusters")
+noGroup$Astrochlamys[noGroup$Astrochlamys == 0] <- 1
+noGroup$dead_cup_corals[noGroup$dead_cup_corals == 0] <- 1
+
+nodes <- colnames(noGroup)
+rownames(noGroup) <- rownames(abu)
+
+
+windows()
+plot.group(noGroup)
+
+write.csv(noGroup, file = "supplements/Table_S05_PowellBasin_Sensitivity_BN_inputs.csv" )

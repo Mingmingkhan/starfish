@@ -85,8 +85,8 @@ abu <- abu[,-21]
 
 taxa.list <- colnames(abu)
 
-write.csv(taxa.list, row.names = FALSE, 
-          file = "data/AP_taxa_list_groups.csv")
+#write.csv(taxa.list, row.names = FALSE, file = "data/AP_taxa_list_groups.csv")
+
 ## NOW ADD TO THIS CSV FILE EXTRA COLUMNS: 
 ## 1) name used for supplement
 ## 2) larger morphogroup
@@ -101,7 +101,7 @@ supergroup <- read.csv("data/AP_taxa_list_groups.csv")
 nm <- supergroup$for_supplement
 colnames(abu) <- nm
 abundance <- abu
-write.csv(abundance, file = "supplements/Table_S01_AntarcticPeninsula-abundance.csv")
+#write.csv(abundance, file = "supplements/Table_S01_AntarcticPeninsula-abundance.csv")
 
 
 
@@ -206,26 +206,26 @@ imgs <- imgs[,2]
 imgs <- paste(rep("IMG", times = 40), imgs, sep = "_")
 
 
-abundance <- do.call(rbind, test.abu)
-colnames(abundance)
-abundance <- lapply(abundance, as.numeric)
-abundance <- as.data.frame(abundance)
-tax <- colnames(abundance)
+abu <- do.call(rbind, test.abu)
+colnames(abu)
+abu <- lapply(abu, as.numeric)
+abu <- as.data.frame(abu)
+tax <- colnames(abu)
 #transect <- gsub(".SVG","",transect)
-rownames(abundance) <- transect
+rownames(abu) <- transect
 
 #remove the brittle star bodies, keep arms only 
 
-abundance <- abundance[,-c(5, 9, 14, 36)] #brittle stars
+abu <- abu[,-c(5, 9, 14, 36)] #brittle stars
 
-abundance <- abundance[,-24] #encrusters
+abu <- abu[,-24] #encrusters
 
 
 encrustPercent <- read.csv("data/encrustPercent.csv")
 
 
-abundance <- cbind(abundance, encrustPercent$encrustPercent)
-abu <- abundance
+abu <- cbind(abu, encrustPercent$encrustPercent)
+#abu <- abundance
 
 del <- c(9, 19) #boulders, dropstones 
 
@@ -252,10 +252,17 @@ write.csv(nm, row.names = FALSE, file = "data/PB_taxa_list_groups.csv")
 #reload the CSV file after adding the info 
 
 supergroup <- read.csv("data/PB_taxa_list_groups.csv")
+supp_nm <- supergroup$for_supplement
 
-save(abundance, file = "data/PowellBasin-abundance.RData")
+test <- abu
+colnames(test) <- supp_nm
 
-write.csv(abundance, file = "supplements/Table_S02_PowellBasin-abundance.csv")
+test$Glass_Sponges <- abu$Glass.sponges #slightly hacky solution 
+abu <- test
+
+save(abu, file = "data/PowellBasin-abundance.RData")
+
+write.csv(abu, file = "supplements/Table_S02_PowellBasin-abundance.csv")
 
 
 # Create Community Composition Figure -----------------------------------------------------
