@@ -1,5 +1,6 @@
 # Starfish
-Data and code for Antarctic Peninsula and Powell Basin BNI
+Data and code for Antarctic Peninsula and Powell Basin BNI for the manuscript:
+Predators do not structure deep water filter feeding communities in the Antarctic benthos 
 
 The supplements folder contains the following files:
 
