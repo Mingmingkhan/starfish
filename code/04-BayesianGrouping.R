@@ -117,14 +117,15 @@ cup_corals <- rowSums(dat[,c(29, 35)])
 
 octocorals <- rowSums(dat[,c(3, 24, 6)]) #plus anthomastus
 
+gorgonians <- rowSums(dat[,c(18, 30, 31, 50, 51, 52)])
 
 included <- c(1, 2, 5, 34, 28, 15, 17, 13, 14, 37, 
               38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 
-              11, 36, 29, 35, 3, 24, 6)
+              11, 36, 29, 35, 3, 24, 6, 18, 30, 31, 50, 51, 52)
 
 #singletons
-toDelete <-  c(8, 9, 10, 16, 20, 21, 22, 23, 25, 18, 30, 31, 
-               32, 33, 50, 51, 52, 53, 54, 55) #fish and dropstones, bryozoans, octopus, 
+toDelete <-  c(8, 9, 10, 16, 20, 21, 22, 23, 25, 
+               32, 33, 50, 53, 54, 55) #fish and dropstones, bryozoans, octopus, 
 #mollusk, sterechinus, worms, pycnogonids, octocorals, brittle general + brown,
 # gorgonians, crinoids
 
@@ -132,8 +133,8 @@ toDelete <-  c(8, 9, 10, 16, 20, 21, 22, 23, 25, 18, 30, 31,
 dat2 <- dat[,-c(included, toDelete)]
 
 dat2 <- cbind(dat2, actiniarians, starfish, glass,
-              demo, cucumbers, octocorals, cup_corals)
-dat2 <- dat2[,-3]
+              demo, cucumbers, octocorals, cup_corals, gorgonians)
+dat2 <- dat2[,-3] #remove dead
 
 
 # Discretize --------------------------------------------------------------
@@ -154,20 +155,29 @@ group01 <- cbind(actiniarians)
 group01.d <- as.data.frame(apply(group01, 2, pres.abs.m)) #discrete
 colnames(group01.d) <- ("Actiniarians")
 
-group012 <- cbind(dat2$Astrochlamys_sol, dat2$Amphiura_Ophioperla, cucumbers, 
-                  cup_corals, demo, glass, dat2$Hard_corals, octocorals, 
-                  dat2$Ophiacantha_vivipara, dat2$Pencil_urchins, starfish, 
-                  dat2$Stylasterids)
+hi.lo.gr <- dat.hi.lo[,-7] #all except actiniarians
+pres.abs.gr <- dat.pres$actiniarians
 
-group012.d <- as.data.frame(apply(group012, 2, get.hilo.m))
-colnames(group012.d) <- c("Astrochlamys", "Amphiura_Ophioperla", "Holothurians",
-                          "Cup_corals", "Demosponges", "Glass_Sponges", 
-                          "Hard_corals", "Octocorals", "Ophiacantha_vivipara",
-                          "Pencil_urchins", "Starfish", "Stylasterids")
+mixed.group <- cbind(hi.lo.gr, pres.abs.gr, encrusters)
+colnames(mixed.group) <- c("Amphiura_Ophioperla", "Astrochlamys_sol",
+                           "Lace_corals", "Ophiacantha_vivipara", 
+                           "Pencil_urchins", "Stylasterids", "starfish",
+                           "Glass_sponges", "Demosponges", "Holothurians",
+                           "Octocorals", "Cup_corals", "Gorgonians", 
+                           "Actiniarians", "Encrusters")
+
+mixed.group$Astrochlamys_sol[mixed.group$Astrochlamys == 0] <- 1
+windows()
+plot.group(mixed.group)
+nodes <- colnames(mixed.group)
+
+write.table(mixed.group, file = "PB_inputs_V2.txt", row.names = FALSE,
+            col.names = FALSE)
+write.table(nodes, file = "nodes2.txt", row.names = FALSE,
+            col.names = FALSE)
 
 
 group012.d$Astrochlamys[group012.d$Astrochlamys == 0] <- 1
-#group012.d$Glass_sponges[group012.d$Glass_sponges == 0] <- 1
 
 mixed <- cbind(group01.d, group012.d, encrusters)
 nodes <- colnames(mixed)
@@ -177,6 +187,8 @@ rownames(mixed) <- rownames(abu)
 
 
 write.csv(mixed, file = "supplements/Table_S04_PowellBasin_BN_inputs.csv")
+
+
 
 
 # POWELL BASIN SENSITIVITY ------------------------------------------------

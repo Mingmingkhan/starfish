@@ -1,10 +1,10 @@
 # Starfish
-Data and code for Antarctic Peninsula and Powell Basin BNI
+Data and code for Powell Basin and Weddell Sea BNI 
 
 The supplements folder contains the following files:
 
-1) Table S1: Antarctic Peninsula Abundance
-2) Table S2: Powell Basin Abundance
-3) Table S3: Antarctic Peninsula BN inputs
-4) Table S4: Powell Basin BN inputs
-5) Table S5: Powell Basin sensitivity BN inputs 
+1) Table S01: Powell Basin Abundance
+2) Table S02: Weddell Sea Abundance
+3) Table S03: Powell Basin BN inputs
+4) Table S04: Weddell Sea BN inputs
+5) Table S05: Powell Basin sensitivity BN inputs 

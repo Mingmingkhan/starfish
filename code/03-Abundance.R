@@ -239,7 +239,7 @@ abu <- cbind(abu, fish)
 nm <- as.data.frame(colnames(abu))
 colnames(nm) <- "original"
 
-write.csv(nm, row.names = FALSE, file = "data/PB_taxa_list_groups.csv") 
+#write.csv(nm, row.names = FALSE, file = "data/PB_taxa_list_groups.csv") 
 
 ## NOW ADD TO THIS CSV FILE EXTRA COLUMNS: 
 ## 1) name used for supplement
@@ -260,7 +260,7 @@ colnames(test) <- supp_nm
 test$Glass_Sponges <- abu$Glass.sponges #slightly hacky solution 
 abu <- test
 
-save(abu, file = "data/PowellBasin-abundance.RData")
+#save(abu, file = "data/PowellBasin-abundance.RData")
 
 write.csv(abu, file = "supplements/Table_S02_PowellBasin-abundance.csv")
 
@@ -329,3 +329,23 @@ Figure4 <- grid.arrange(qS, qH, nrow = 1) #better with legend on bottom
 
 #this plot was further modified in Inkscape 
 
+# Make species accumulation curve  ----------------------------------------
+
+#turn abundance table to presence/absence only 
+
+abuS_copy <- abuS
+abuS_copy[abuS_copy > 0] <- 1
+totS <- rowSums(abuS_copy)
+totS <- sort(totS, decreasing = FALSE)
+
+abuH_copy <- abuH
+abuH_copy[abuH_copy > 0] <- 1
+totH <- rowSums(abuH_copy)
+totH <- sort(totH, decreasing = FALSE)
+
+windows()
+plot(1:40, totH, pch = 16, xlab = "number of photos", ylab = "number of species", 
+     col = "blue", ylim = c(0, 25), xlim = c(0, 65))
+lines(1:40, totH, lwd = 1)
+points(1:61, totS, pch = 16, col = "red")
+lines(1:61, totS, lwd = 1)
